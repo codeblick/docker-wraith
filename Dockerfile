@@ -6,7 +6,7 @@ RUN gem install wraith --no-document && \
     echo "deb http://ftp.us.debian.org/debian jessie main contrib non-free" | tee -a /etc/apt/sources.list && \
     echo "deb http://security.debian.org/ jessie/updates contrib non-free" | tee -a /etc/apt/sources.list && \
     apt-get update && \
-    apt-get install -y ttf-freefont ttf-mscorefonts-installer ttf-bitstream-vera ttf-dejavu ttf-liberation google-chrome-beta imagemagick && \
+    apt-get install -y ttf-freefont ttf-mscorefonts-installer ttf-bitstream-vera ttf-dejavu ttf-liberation google-chrome-unstable imagemagick && \
     apt autoremove -y && apt clean && rm -rf /var/lib/apt/lists/* && \
     mkdir /wraith
 
